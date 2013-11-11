@@ -1,6 +1,6 @@
 #  Current Ruby version, as a unicode character, and patch level
 #  Ex. ruby 1.9.3-p362 the display will be ➈❸-p362
-RVM_VERSION="%{$fg[white]%}$(~/.rvm/bin/rvm-prompt u p g)%{$reset_color%}"
+#  RVM_VERSION="%{%F{030}%}$(~/.rvm/bin/rvm-prompt u p g)%{$reset_color%}"
 
 #  Git prompt info from oh my zsh
 GIT_PROMPT="\$(git_prompt_info)%{$reset_color%}"
@@ -13,7 +13,7 @@ CURRENT_PATH="%{%F{166}%}%~%{$reset_color%}"
 # USER_HOST="%{$fg[cyan]%}%n@%m%{$reset_color%}"
 
 #  putting it all together
-PROMPT="$RVM_VERSION $CURRENT_PATH $GIT_PROMPT > "
+PROMPT="$CURRENT_PATH $GIT_PROMPT > "
 
 #  Sets the OMZ variables for managing git prompt
 #  Unstaged changes will display a red dot
